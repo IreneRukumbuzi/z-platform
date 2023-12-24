@@ -1,0 +1,7 @@
+#Directories
+server/node_modules
+server/build
+
+#Hidden files
+server/.env
+server/.nyc_output
