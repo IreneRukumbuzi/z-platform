@@ -33,15 +33,15 @@ class UserController {
 
       // extract the profile image from the request and upload it to cloudinary
       let profileImage;
-      // if (req.files.profilePicture !== undefined) {
-      //   let dataBuffer = new Buffer.from(req.files.profilePicture[0].buffer);
-      //   let mediaType = path.extname(req.files.profilePicture[0].originalname).toString();
-      //   let imageData = imageDataURI.encode(dataBuffer, mediaType);
-      //   let uploadedImage = await uploader.upload(imageData);
-      //   profileImage = uploadedImage.url;
-      // }
+      if (req.files.profilePicture !== undefined) {
+        let dataBuffer = new Buffer.from(req.files.profilePicture[0].buffer);
+        let mediaType = path.extname(req.files.profilePicture[0].originalname).toString();
+        let imageData = imageDataURI.encode(dataBuffer, mediaType);
+        let uploadedImage = await uploader.upload(imageData);
+        profileImage = uploadedImage.url;
+      }
 
-      // req.body.profileImage = profileImage; // append the profileImage url from cloudinary to the body
+      req.body.profileImage = profileImage; // append the profileImage url from cloudinary to the body
       const user = await UserService.createUser(req.body);
       const token = await TokenHandler.generateToken(user);
 
