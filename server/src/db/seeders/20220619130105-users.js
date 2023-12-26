@@ -13,7 +13,7 @@ module.exports = {
         dob: '2000-01-01',
         age: '23',
         maritalStatus: 'SINGLE',
-        email: 'test@example.com',
+        email: 'rukkirene21@gmail.com',
         password: bcrypt.hashSync('Password12345!', 10),
         nationality:'Rwandan',
         createdAt: moment.utc().format(),

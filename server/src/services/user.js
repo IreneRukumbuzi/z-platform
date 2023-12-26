@@ -74,7 +74,6 @@ class UserService {
    * @returns
    */
   static async verifyUser(email, status) {
-    const user = await User.findOne({ where: { email } });
     const verifiedUser = await User.update(
       { status: status },
       { where: { email }, returning: true, plain: true }
