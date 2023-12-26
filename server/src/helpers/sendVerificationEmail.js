@@ -71,7 +71,7 @@ export const sendResetPasswordLinkEmail = async (email, link) => {
     <p>Hello</p>
     <h2>You've asked to reset your password</h2><br/>
     <br />
-    Dear Emile
+    Dear
 
     <p>We have received your request to reset your password.</p>
     <p>Click <u><a href=${link}>here</a></u> to reset your password</p>

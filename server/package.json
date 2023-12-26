@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Company Z provides essential online services for tens of thousands of users through their platform ZPlatform.",
   "main": "server.js",
-  "repository": "https://github.com/Emile-Nsengimana/z-platform.git",
-  "author": "Emile-Nsengimana <emilereas7@gmail.com>",
+  "repository": "https://github.com/IreneRukumbuzi/z-platform.git",
+  "author": "Irene Rukumbuzi <rukkirene21@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": "20.5.1"
