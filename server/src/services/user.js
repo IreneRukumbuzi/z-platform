@@ -1,7 +1,5 @@
 import model from "../db/models";
 import bcrypt from "bcrypt";
-import crypto from "randombytes";
-import { raw } from "body-parser";
 
 const { User, VerificationCode, Role } = model;
 
