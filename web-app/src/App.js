@@ -1,6 +1,5 @@
 import { CssBaseline } from "@mui/material";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -20,7 +19,7 @@ function App() {
   const isAuthenticated = accessToken !== null && user !== null;
 
   // Use useNavigate to get the navigate function
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <>
